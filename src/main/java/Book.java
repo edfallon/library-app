@@ -7,4 +7,12 @@ public class Book {
         this.title = title;
         this.available = available;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
 }
