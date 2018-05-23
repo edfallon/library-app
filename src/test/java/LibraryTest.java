@@ -1,3 +1,4 @@
+import models.Library;
 import org.junit.Before;
 import org.junit.Test;
 
