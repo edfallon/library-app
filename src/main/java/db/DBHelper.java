@@ -28,6 +28,22 @@ public class DBHelper {
         }
     }
 
+    public static void deleteAll(Class classType){
+
+        session = HibernateUtil.getSessionFactory().openSession();
+        try {
+            String hql = "DELETE FROM " + classType.getName();
+            transaction = session.beginTransaction();
+            session.createQuery(hql).executeUpdate();
+            transaction.commit();
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
+
+
     public static <T> List<T>  getAll(Class classType){
         session = HibernateUtil.getSessionFactory().openSession();
         List<T> results = null;
