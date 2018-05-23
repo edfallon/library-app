@@ -1,6 +1,9 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
+
 public class BookTest {
 
     Book book1;
@@ -10,5 +13,8 @@ public class BookTest {
         book1 = new Book("Mr Men", true);
     }
 
-
+    @Test
+    public void canGetBookTile() {
+        assertEquals("Mr Men", book1.getTitle());
+    }
 }
