@@ -24,4 +24,6 @@ public class Library {
     public void setCatalogue(ArrayList<Book> catalogue) {
         this.catalogue = catalogue;
     }
+
+
 }
