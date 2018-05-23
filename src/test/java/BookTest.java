@@ -17,4 +17,9 @@ public class BookTest {
     public void canGetBookTile() {
         assertEquals("Mr Men", book1.getTitle());
     }
+
+    @Test
+    public void canCheckIfBookIsAvailable() {
+        assertEquals(true, book1.isAvailable());
+    }
 }
