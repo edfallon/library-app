@@ -10,6 +10,7 @@ public class Book {
     private int id;
     private String title;
     private boolean available;
+    private
 
     public Book(String title) {
         this.title = title;
@@ -23,11 +24,12 @@ public class Book {
         return id;
     }
 
+    @Column(name = "title")
     public String getTitle() {
         return title;
     }
 
-    @Column(name = "title")
+
     public void setTitle(String title) {
         this.title = title;
     }

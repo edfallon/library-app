@@ -36,7 +36,7 @@ public class User {
         this.name = name;
     }
 
-    OneToMany()
+    @OneToMany(mappedBy = "")
     public ArrayList<Book> getBooksOnLoan() {
         return booksOnLoan;
     }
