@@ -5,7 +5,7 @@ public class Library {
     private int id;
     private ArrayList<Book> catalogue;
 
-    public Library(ArrayList<Book> catalogue) {
+    public Library() {
         this.catalogue = new ArrayList<Book>();
     }
 
