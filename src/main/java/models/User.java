@@ -1,7 +1,10 @@
 package models;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 
+@Entity
+@Table(name="users")
 public class User {
 
     private int Id;
@@ -13,6 +16,9 @@ public class User {
         this.booksOnLoan = new ArrayList<Book>();
     }
 
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
     public int getId() {
         return Id;
     }
@@ -21,6 +27,7 @@ public class User {
         Id = id;
     }
 
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -29,6 +36,7 @@ public class User {
         this.name = name;
     }
 
+    OneToMany()
     public ArrayList<Book> getBooksOnLoan() {
         return booksOnLoan;
     }
