@@ -1,0 +1,18 @@
+<p class="pageheader">All Books</p>
+
+<div class="container">
+
+    <table>
+        <tr>
+            <th>Title</th>
+        </tr>
+
+        #foreach ($book in $books)
+        <tr>
+            <th>$book.getTitle()</th>
+        </tr>
+
+    </table>
+
+
+</div>
