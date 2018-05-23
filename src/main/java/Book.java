@@ -3,9 +3,9 @@ public class Book {
     private String title;
     private boolean available;
 
-    public Book(String title, boolean available) {
+    public Book(String title) {
         this.title = title;
-        this.available = available;
+        this.available = true;
     }
 
     public String getTitle() {

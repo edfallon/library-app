@@ -10,7 +10,7 @@ public class BookTest {
 
     @Before
     public void setUp() throws Exception {
-        book1 = new Book("Mr Men", true);
+        book1 = new Book("Mr Men");
     }
 
     @Test
